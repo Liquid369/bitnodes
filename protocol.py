@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# protocol.py - Bitcoin protocol access for Bitnodes.
+# protocol.py - DogeCash protocol access for Bitnodes.
 #
 # Copyright (c) Addy Yeow Chin Heng <ayeowch@gmail.com>
 #
@@ -25,7 +25,7 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
-Bitcoin protocol access for Bitnodes.
+DogeCash protocol access for Bitnodes.
 Reference: https://en.bitcoin.it/wiki/Protocol_specification
 
 -------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Reference: https://en.bitcoin.it/wiki/Protocol_specification
                            protocol version >= 70001
 -------------------------------------------------------------------------------
 [---MESSAGE---]
-[ 4] MAGIC_NUMBER               (\xF9\xBE\xB4\xD9)                  uint32_t
+[ 4] MAGIC_NUMBER               (\xA0\x43\x16\x19)                  uint32_t
 [12] COMMAND                                                        char[12]
 [ 4] LENGTH                     <I (len(payload))                   uint32_t
 [ 4] CHECKSUM                   (sha256(sha256(payload))[:4])       uint32_t
